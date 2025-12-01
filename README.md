@@ -23,6 +23,10 @@ This repository goals🔥:
 
 ---
 
+RUST Docementation 
+<a href = "https://doc.rust-lang.org/book/">RUST</a>
+
+---
 📌 Notes
 
 This repository is for learning and experimentation
