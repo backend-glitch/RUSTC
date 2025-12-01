@@ -23,8 +23,8 @@ This repository goals🔥:
 
 ---
 
-RUST Docementation 
-<a href = "https://doc.rust-lang.org/book/">RUST</a>
+RUST Docementation 📖 :
+<a href = "https://doc.rust-lang.org/book/"><i><b>RUST</b></i></a>
 
 ---
 📌 Notes
