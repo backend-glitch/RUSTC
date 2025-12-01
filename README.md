@@ -32,5 +32,5 @@ Fork, clone, and modify freely for your Rust journey!
 Contributions are welcome — pull requests or suggestions are encouraged.
 
 ---
-Made with ❤️ and 🦀 in 2025
+Made with ❤️ and 🦀 in 2025 by ARJUN
 
