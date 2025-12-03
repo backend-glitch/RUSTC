@@ -13,12 +13,38 @@ fn main() {
     println!("{s}");  // works!
 
 
-    // calculating the length
+    // calculating the length ,taking the ownership
       let s1 = String::from("hello");
 
     let (s2, len) = calculate_length(s1);
 
     println!("The length of '{s2}' is {len}.");
+
+    //this time not by ownership but by reference
+    let s1 = String::from("hello");
+
+    let len = calculate_length(&s1);
+
+    println!("The length of '{s1}' is {len}.");
+
+
+    // like variables , reference are immutable by default
+
+
+    // there can be many immutable references but only one mutable reference that also when immutable are out os scope!!
+    let mut s4 = String::from("hello");
+
+    let r1 = &s4; // no problem
+    let r2 = &s4; // no problem
+    println!("{r1} and {r2}");
+    // Variables r1 and r2 will not be used after this point.
+
+    let r3 = &mut s4; // no problem
+    println!("{r3}");
+
+
+    // dangling pointer
+    let strings = no_dangle();
 }
     fn takes_ref(s: &String) {
     println!("Got: {}", s);
@@ -29,8 +55,21 @@ fn takes_and_returns(s: String) -> String {
     s   // return ownership back
 }
 
+// taking ownership
 fn calculate_length(s: String) -> (String, usize) {
     let length = s.len(); // len() returns the length of a String
 
     (s, length)
+}
+
+// taking reference
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+
+
+fn no_dangle() -> String {
+    let s = String::from("hello");
+
+    s
 }
