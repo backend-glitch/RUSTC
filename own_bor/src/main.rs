@@ -45,6 +45,19 @@ fn main() {
 
     // dangling pointer
     let strings = no_dangle();
+
+    //slices
+let s = String::from("hello");
+
+let len = s.len();
+
+let slice = &s[0..len];
+let slice = &s[..];
+
+//slices on arrays
+let a = [1, 2, 3, 4, 5];
+
+let slice = &a[1..3];
 }
     fn takes_ref(s: &String) {
     println!("Got: {}", s);
