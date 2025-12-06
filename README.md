@@ -6,6 +6,11 @@
 
 ---
 
+## 📈 My Progress
+
+<img src="https://gitstar-h2sl.vercel.app/skills?list=RUST:30:orange" />
+
+---
 ## 🌟 Overview
 Welcome to **Rust 2025**, A collection of Rust Learning .🚀
 
